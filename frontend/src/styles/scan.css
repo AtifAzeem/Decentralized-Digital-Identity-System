@@ -1,0 +1,256 @@
+/* ── Scan Page — standalone, mobile-first ── */
+
+.scan-shell {
+  min-height: 100dvh;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0f172a;
+  padding-bottom: 40px;
+}
+
+/* Header */
+.scan-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px 16px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.scan-emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.scan-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--accent, #2563eb);
+  line-height: 1.2;
+}
+
+.scan-subtitle {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 1px;
+}
+
+/* Camera */
+.scan-camera-wrap {
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.scan-camera-wrap.hidden {
+  display: none;
+}
+
+#qr-reader {
+  width: 100% !important;
+  height: 340px !important;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none !important;
+}
+
+/* hide the default html5-qrcode UI chrome */
+#qr-reader img,
+#qr-reader button,
+#qr-reader select,
+#qr-reader__dashboard,
+#qr-reader__status_span,
+#qr-reader__header_message,
+#qr-reader__filescan_input {
+  display: none !important;
+}
+
+#qr-reader video {
+  width: 100% !important;
+  height: 340px !important;
+  border-radius: 16px !important;
+  object-fit: cover;
+}
+
+.scan-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.scan-frame {
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 2000px rgba(0, 0, 0, 0.35),
+    0 0 0 3px rgba(255,255,255,0.1);
+}
+
+.scan-hint {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* States */
+.scan-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 60px 24px;
+  text-align: center;
+  color: #475569;
+  font-size: 15px;
+}
+
+.scan-spinner {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.scan-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.scan-err-msg {
+  font-size: 14px;
+  color: #dc2626;
+  max-width: 280px;
+}
+
+/* Buttons */
+.scan-btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.scan-btn:active { background: #1d4ed8; }
+
+.scan-btn-outline {
+  background: transparent;
+  border: 1.5px solid #cbd5e1;
+  color: #475569;
+}
+
+.scan-btn-outline:active { background: #f1f5f9; }
+
+/* Results */
+.scan-results {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.res-card {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.res-card-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 12px 16px 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.res-card-body {
+  padding: 4px 0 8px;
+}
+
+.res-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 7px 16px;
+  gap: 12px;
+}
+
+.res-row-col {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.res-label {
+  font-size: 12px;
+  color: #94a3b8;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.res-value {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 500;
+  text-align: right;
+  word-break: break-word;
+}
+
+.res-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.res-badge {
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Medication block */
+.med-block { padding: 4px 0; }
+
+.med-divider {
+  height: 1px;
+  background: #f1f5f9;
+  margin: 6px 16px;
+}
