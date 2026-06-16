@@ -14,9 +14,11 @@ This project explores a decentralized approach to identity management by combini
 * IPFS (InterPlanetary File System)
 * AES-256 Encryption
 * QR Code Based Identity Retrieval
+  
+For the purpose of proof of work in this system we have assumed that the data user is providing is authentic. In real word use case data authentication can easily be performed by using aadhar otp verification to retrieve the real data connected to an individual. 
 
 Instead of storing sensitive information directly on the blockchain, encrypted identity records are stored on IPFS while only the corresponding Content Identifier (CID) is stored on-chain.
-Identity data can only be fetched through authorized user(In this case for demo two different API calls can retrieve either medical and personal or trip and personal data depending upon wether it called through medical api/ police api
+Identity data can only be fetched through authorized user(In this case for demo two different API calls can retrieve either medical and personal or trip and personal data depending upon wether the backend was called through medical api/police api
 
 ---
 
@@ -65,7 +67,7 @@ Each module can be managed independently.
 User
   ↓
 Frontend (React)
-  ↓
+  ↓ DATA
 Backend (Node.js + Express)
   ↓
 AES-256 Encryption
@@ -135,20 +137,6 @@ User → QR/User ID
 
 ---
 
-## 📂 Project Structure
-
-```text
-frontend/
-backend/
- ├── routes/
- ├── models/
- ├── services/
- │    ├── encryption.js
- │    ├── ipfsService.js
- │    └── blockchainService.js
-smart-contract/
-```
-
 ---
 
 ## 🔧 Smart Contract
@@ -180,7 +168,7 @@ Add screenshots here:
 
 ### Dashboard
 
-![Dashboard](assets/dashboard.png)
+![Dashboard](assets/login.png)
 
 ### Identity Management
 
