@@ -164,23 +164,44 @@ Benefits:
 
 ## 📸 Screenshots
 
-Add screenshots here:
-
 ### Dashboard
 
-![Dashboard](assets/login.png)
+<p align="center">
+  <img src="assets/login.png" width="800">
+</p>
 
 ### Identity Management
 
-![Identity](assets/identity.png)
-![Medical Data](assets/medical.png)
-![Trip Data](assets/trip.png)
+<p align="center">
+  <img src="assets/identity.png" width="250">
+  <img src="assets/medical.png" width="250">
+  <img src="assets/trip.png" width="250">
+</p>
 
 ### QR Retrieval
 
-![QR](assets/qr.png)
-![medical api](assets/medApi.png) ![police api](assets/polApi.png)
-![medical data](assets/medData.jpeg) ![personal data](assets/polData.jpeg)
+<p align="center">
+  <img src="assets/qr.png" width="250">
+</p>
+
+### API Responses
+
+<p align="center">
+  <img src="assets/medApi.png" width="400">
+  <img src="assets/polApi.png" width="400">
+</p>
+
+### Retrieved Medical Data
+
+<p align="center">
+  <img src="assets/medData.jpeg" width="300">
+</p>
+
+### Retrieved Personal Data
+
+<p align="center">
+  <img src="assets/polData.jpeg" width="300">
+</p>
 
 ---
 
