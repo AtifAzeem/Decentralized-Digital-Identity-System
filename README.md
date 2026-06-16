@@ -173,10 +173,14 @@ Add screenshots here:
 ### Identity Management
 
 ![Identity](assets/identity.png)
+![Medical Data](assets/medical.png)
+![Trip Data](assets/trip.png)
 
 ### QR Retrieval
 
 ![QR](assets/qr.png)
+![medical api](assets/medApi.png) ![police api](assets/polApi.png)
+![medical data](assets/medData.jpeg) ![personal data](assets/polData.jpeg)
 
 ---
 
