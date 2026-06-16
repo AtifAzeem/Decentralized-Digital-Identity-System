@@ -187,20 +187,10 @@ Benefits:
 ### API Responses
 
 <p align="center">
-  <img src="assets/medApi.png" width="400">
-  <img src="assets/polApi.png" width="400">
-</p>
-
-### Retrieved Medical Data
-
-<p align="center">
-  <img src="assets/medData.jpeg" width="300">
-</p>
-
-### Retrieved Personal Data
-
-<p align="center">
-  <img src="assets/polData.jpeg" width="300">
+  <img src="assets/medApi.jpeg" height="500">
+  <img src="assets/polApi.jpeg" height="500">
+  <img src="assets/medData.jpeg" height="500">
+  <img src="assets/polData.jpeg" height="500">
 </p>
 
 ---
