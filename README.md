@@ -190,7 +190,6 @@ Benefits:
   <img src="assets/medApi.jpeg" height="500">
   <img src="assets/polApi.jpeg" height="500">
   <img src="assets/medData.jpeg" height="500">
-  <img src="assets/polData.jpeg" height="500">
 </p>
 
 ---
