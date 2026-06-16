@@ -16,6 +16,7 @@ This project explores a decentralized approach to identity management by combini
 * QR Code Based Identity Retrieval
 
 Instead of storing sensitive information directly on the blockchain, encrypted identity records are stored on IPFS while only the corresponding Content Identifier (CID) is stored on-chain.
+Identity data can only be fetched through authorized user(In this case for demo two different API calls can retrieve either medical and personal or trip and personal data depending upon wether it called through medical api/ police api
 
 ---
 
